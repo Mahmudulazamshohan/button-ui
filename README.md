@@ -16,7 +16,6 @@ import ButtonUi from '@mahmudulazam/button-ui';
 Vue.use(ButtonUi);
 ```
 ## How to use Button UI
-```
+## Example
 
-```
 
