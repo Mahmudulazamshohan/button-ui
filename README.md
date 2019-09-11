@@ -44,6 +44,24 @@ With icon
              </micon>
       </m-button>
 ```
+#### Button Group
+```
+<MButtonGroup  class="mx-2 my-2">
+      <m-button  size="large"
+                 material
+                 type="info">
+        play
+      </m-button>
+      <m-button  size="large"
+                 type="success">
+        play
+      </m-button>
+      <m-button  size="large"
+                 type="warning">
+        play
+      </m-button>
+    </MButtonGroup>
+```
 ###
 Slot 
 ###
