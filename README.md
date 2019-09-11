@@ -16,7 +16,7 @@ import ButtonUi from '@mahmudulazam/button-ui'
 import '@mahmudulazam/button-ui/dist/mbutton.css'
 Vue.use(ButtonUi)
 ```
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](images/screenshot.PNG "Image")
 
 ## How to use Button UI
 ## Example
