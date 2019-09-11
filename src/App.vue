@@ -4,18 +4,15 @@
       <m-button size="small"
                  :type="color"
                  class="mx-2 my-2">
-        Play
+        {{ color }}
       </m-button>
-
-
-
     </template>
     <br>
     <template  v-for="color in colors">
       <m-button size="medium"
                 :type="color"
                 class="mx-2 my-2">
-        Play
+        {{ color }}
       </m-button>
     </template>
     <br>
@@ -23,7 +20,7 @@
       <m-button size="large"
                 :type="color"
                 class="mx-2 my-2">
-        Play
+        {{ color }}
       </m-button>
     </template>
     <br>
@@ -32,7 +29,7 @@
                 material
                 :type="color"
                 class="mx-2 my-2">
-        Play
+        {{ color }}
       </m-button>
 
 
@@ -44,7 +41,7 @@
                 material
                 :type="color"
                 class="mx-2 my-2">
-        Play
+        {{ color }}
       </m-button>
     </template>
     <br>
@@ -94,8 +91,53 @@
           my_location
         </micon>
       </m-button>
-    </template>
 
+    </template>
+    <MButtonGroup  class="mx-2 my-2">
+      <m-button  size="small"
+                 material
+                 type="info">
+        play
+      </m-button>
+      <m-button  size="small"
+                 type="success">
+        play
+    </m-button>
+      <m-button  size="small"
+                 type="warning">
+        play
+      </m-button>
+    </MButtonGroup>
+    <MButtonGroup  class="mx-2 my-2">
+      <m-button  size="medium"
+                 material
+                 type="info">
+        play
+      </m-button>
+      <m-button  size="medium"
+                 type="success">
+        play
+      </m-button>
+      <m-button  size="medium"
+                 type="warning">
+        play
+      </m-button>
+    </MButtonGroup>
+    <MButtonGroup  class="mx-2 my-2">
+      <m-button  size="large"
+                 material
+                 type="info">
+        play
+      </m-button>
+      <m-button  size="large"
+                 type="success">
+        play
+      </m-button>
+      <m-button  size="large"
+                 type="warning">
+        play
+      </m-button>
+    </MButtonGroup>
   </div>
 </template>
 
@@ -106,11 +148,12 @@
 <script>
 import MButton from './components/MButton'
 import Micon from './components/Micon'
+import MButtonGroup from './components/MButtonGroup'
 export default {
-  components: { Micon, MButton },
+  components: { MButtonGroup, Micon, MButton },
   data(){
     return {
-      colors:['success','secondary','info','warning']
+      colors:['success','secondary','info','warning','danger','success-dark','secondary-dark']
     }
   },
   methods: {

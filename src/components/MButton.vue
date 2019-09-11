@@ -1,6 +1,6 @@
 <template>
 
-  <button :class="`mui-button ${ floatButton } ${float ? 'mui-float':''} ${rounded ? 'mui-rounded':''} mui-${type} mui-${size} ${color.length || type!='default' > 0 ? 'text-white': ''} ${inverted ? 'inverted' :''} ${material ? 'material-shadow':''}`"
+  <button :class="`mui-button ${ floatButton ? floatButton : '' } ${float ? 'mui-float':''} ${rounded ? 'mui-rounded':''} mui-${type} mui-${size} ${color.length || type!='default' > 0 ? 'text-white': ''} ${inverted ? 'inverted' :''} ${material ? 'material-shadow':''}`"
           :style="{background:color,'text-color':textColor+'!important' }"
           v-if="!inverted" @click="$emit('click',$event)">
     <slot></slot>
@@ -75,7 +75,7 @@ export default {
             return 'mui-float-sm'
           case 'medium':
             return 'mui-float-md'
-          case '':
+          case 'large':
             return 'mui-float-lg'
         }
       }

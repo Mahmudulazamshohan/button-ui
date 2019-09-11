@@ -11,71 +11,128 @@ $borderRadius : 4px;
 .mui-button:hover{
   box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
 }
-.mui{
-  &-small{
+.mui {
+  &-small {
     padding: $smallPadding !important;
   }
-  &-medium{
+
+  &-medium {
     padding: $mediumPadding !important;
   }
-  &-large{
+
+  &-large {
     padding: $largePadding !important;
   }
-  &-success{
+
+  &-success {
     background: #28CA69;
   }
-  &-success:hover{
+
+  &-success:hover {
     background: #28c161;
   }
-  &-secondary{
+
+  &-success-dark {
+    background: #007E33;
+  }
+
+  &-success-dark:hover {
+    background: #007E33;
+  }
+
+  &-danger {
+    background: #ff4444;
+  }
+
+  &-danger:hover {
+    background: #f54141;
+  }
+
+  &-secondary {
     background: #AA66CC;
   }
 
-  &-secondary:hover{
+  &-secondary:hover {
     background: #9c5fbe;
   }
-  &-info{
+
+  &-secondary-dark {
+    background: #9259b1;
+  }
+
+  &-secondary-dark:hover {
+    background: #73478e;
+  }
+
+  &-info {
     background: #33B5E5;
   }
-  &-info:hover{
+
+  &-info:hover {
     background: #33acdc;
   }
-  &-warning{
+
+  &-warning {
     background: #FFBB33;
   }
-  &-warning:hover{
+
+  &-warning:hover {
     background: #f0ae32;
   }
-  &-rounded{
+
+  &-rounded {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
   }
-  &-float{
+
+  &-float {
     border-radius: 50% !important;
 
   }
-  &-float-sm{
-    width: 29px !important;
-    height: 29px !important;
+
+  &-float-sm {
+    width: 36.15385px !important;
+    height: 36.15385px !important;
   }
-  &-float-sm i{
+
+  &-float-sm i {
     font-size: 1.3em;
   }
-  &-float-lg{
-    width: 50px !important;
-    height: 50px !important;
+
+  &-float-lg {
+    width: 51.1px !important;
+    height: 51.1px !important;
   }
-  &-float-lg i{
-    font-size: 1.5em;
+
+  &-float-lg i {
+    font-size: 1.625rem;
   }
-  &-float-md{
-    width: 35px !important;
-    height: 35px!important;
+
+  &-float-md {
+    width: 40px !important;
+    height: 40px !important;
   }
-  &-float-md i{
-    font-size: 1.4em;
+
+  &-float-md i {
+    font-size: 1.25rem;
   }
+
+  &-button-group {
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+  }
+}
+.mui-button-group .mui-button{
+  border-radius:0% !important;
+}
+
+.mui-button-group .mui-button:first-child{
+  border-radius: 4px 0px 0px 4px !important;
+}
+.mui-button-group .mui-button:last-child{
+  border-radius: 0px 4px 4px 0px !important;
 }
 
 
